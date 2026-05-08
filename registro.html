@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Olympus Fitness Center - Registro</title>
+</head>
+<body>
+    <h1>Inscripción de Nuevos Socios</h1>
+    <p><a href="index.html">Volver a la página principal</a></p>
+
+    <hr>
+
+    <form name="inscripcion" method="post" action="#">
+        
+        <fieldset>
+            <legend>Identificación</legend>
+            <label>Nombre completo</label>
+            <input type="text" name="nombre" required>
+            <br><br>
+            <label>Código PIN de acceso</label>
+            <input type="password" name="pin" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferencias y Suscripción</legend>
+            <p>Servicios extra</p>
+            <input type="checkbox" name="servicios" value="toalla"> Toalla
+            <input type="checkbox" name="servicios" value="taquilla"> Taquilla
+            <input type="checkbox" name="servicios" value="sauna"> Sauna
+
+            <p>Tipo de cuota</p>
+            <input type="radio" name="cuota" value="mensual"> Mensual
+            <input type="radio" name="cuota" value="trimestral"> Trimestral
+            <input type="radio" name="cuota" value="anual"> Anual
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Detalles Adicionales</legend>
+            <label>Sube tu foto de perfil o DNI</label>
+            <input type="file" name="documentacion">
+            
+            <br><br>
+
+            <label>Elige tu actividad favorita</label>
+            <select name="actividad">
+                <option value="spinning">Spinning</option>
+                <option value="yoga">Yoga</option>
+                <option value="zumba">Zumba</option>
+                <option value="crossfit">Crossfit</option>
+            </select>
+
+            <br><br>
+
+            <label>¿Tienes alguna lesión o condición médica?</label><br>
+            <textarea name="comentarios" rows="4" cols="50" placeholder="Escribe aquí..."></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar alta">
+        <input type="reset" value="Borrar datos">
+
+    </form>
+
+</body>
+</html>
